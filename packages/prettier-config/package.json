@@ -4,9 +4,10 @@
   "description": "Prettier config used at Axioned",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axioned/config.git",
+    "url": "https://github.com/axioned/config.git",
     "directory": "packages/prettier-config"
   },
+  "homepage": "https://github.com/axioned/config/tree/main/packages/prettier-config#README",
   "main": "index.js",
   "keywords": [
     "prettier",
