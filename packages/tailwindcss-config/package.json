@@ -1,0 +1,31 @@
+{
+  "name": "@theguild/tailwind-config",
+  "version": "0.2.1",
+  "description": "The Guild's shared Tailwind config",
+  "repository": {
+    "url": "the-guild-org/shared-config",
+    "directory": "packages/tailwind-config"
+  },
+  "author": "The Guild (https://the-guild.dev)",
+  "license": "MIT",
+  "private": false,
+  "exports": {
+    ".": "./index.cjs",
+    "./postcss.config": "./postcss.config.cjs",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwind-config"
+  ],
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-import": "^15.0.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

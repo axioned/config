@@ -4,6 +4,7 @@
   "description": "Shared config files at Axioned",
   "main": "index.js",
   "scripts": {
+    "welcome": "echo \"Hello!\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +14,10 @@
   "keywords": [
     "config"
   ],
-  "author": "Axioned",
+  "author": {
+    "name": "Axioned",
+    "url": "https://axioned.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/axioned/config/issues"
