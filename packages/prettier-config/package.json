@@ -1,11 +1,16 @@
 {
   "name": "@axioned/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prettier config used at Axioned",
-  "repository": "axioned/config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axioned/config.git",
+    "directory": "packages/prettier-config"
+  },
   "main": "index.js",
-   "keywords": [
-    "prettier"
+  "keywords": [
+    "prettier",
+    "prettier-config"
   ],
   "scripts": {
     "test:update": "prettier --config ./index.js --write examples/",
