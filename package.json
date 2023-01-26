@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "@axioned/config",
   "version": "0.0.1",
   "description": "Shared config files at Axioned",
   "main": "index.js",
@@ -14,10 +14,7 @@
   "keywords": [
     "config"
   ],
-  "author": {
-    "name": "Axioned",
-    "url": "https://axioned.com"
-  },
+  "author": "Axioned (https://axioned.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/axioned/config/issues"

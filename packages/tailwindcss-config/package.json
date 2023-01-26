@@ -1,12 +1,12 @@
 {
-  "name": "@theguild/tailwind-config",
-  "version": "0.2.1",
-  "description": "The Guild's shared Tailwind config",
+  "name": "@axioned/tailwind-config",
+  "version": "0.0.1",
+  "description": "Axioned's shared Tailwind config",
   "repository": {
-    "url": "the-guild-org/shared-config",
+    "url": "git+https://github.com/axioned/config.git",
     "directory": "packages/tailwind-config"
   },
-  "author": "The Guild (https://the-guild.dev)",
+  "author": "Axioned (https://axioned.com)",
   "license": "MIT",
   "private": false,
   "exports": {
@@ -27,5 +27,13 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/axioned/config/issues"
+  },
+  "homepage": "https://github.com/axioned/config#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
