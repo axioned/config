@@ -7,14 +7,14 @@ Prettier config used at Axioned
 Install the package using `npm`
 
 ```sh
-npm install --save-dev @github/prettier-config
+npm install --save-dev @axioned/prettier-config
 ```
 
 Add the `prettier` key to your `package.json`
 
 ```diff
    "author": "Axioned (https://axioned.com)",
-+  "prettier": "@github/prettier-config",
++  "prettier": "@axioned/prettier-config",
    "main": "index.js"
 ```
 
