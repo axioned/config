@@ -1,6 +1,6 @@
 // Used to generate Color Palette based on the primary color
 const makePrimaryColor =
-  l =>
+  (l) =>
   ({ opacityValue }) => {
     if (opacityValue === undefined) {
       return `hsl(var(--nextra-primary-hue) 100% ${l}%)`;
@@ -9,52 +9,52 @@ const makePrimaryColor =
   };
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    './theme.config.tsx',
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./theme.config.tsx",
     // components v4 + tsup
-    '../node_modules/@axioned/components/dist/**/*.{js,mjs}',
-    './node_modules/@axioned/components/dist/**/*.{js,mjs}',
+    "../node_modules/@axioned/components/dist/**/*.{js,mjs}",
+    "./node_modules/@axioned/components/dist/**/*.{js,mjs}",
     // pnpm
-    '../node_modules/.pnpm/node_modules/@axioned/components/dist/**/*.{js,mjs}',
+    "../node_modules/.pnpm/node_modules/@axioned/components/dist/**/*.{js,mjs}",
   ],
   theme: {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     fontSize: {
-      xs: '.75rem',
-      sm: '.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
+      xs: ".75rem",
+      sm: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
     },
     extend: {
       colors: {
-        current: 'currentColor',
-        transparent: 'transparent',
-        white: '#fff',
-        dark: '#111',
+        current: "currentColor",
+        transparent: "transparent",
+        white: "#fff",
+        dark: "#111",
         primary: {
           50: makePrimaryColor(97),
           100: makePrimaryColor(94),
