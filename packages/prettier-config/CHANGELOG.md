@@ -1,5 +1,11 @@
 # @axioned/prettier-config
 
+## 1.1.3
+
+### Patch Changes
+
+- Set bracketSameLine to false, remove quoteProps (use Prettier default)
+
 ## 1.1.2
 
 ### Patch Changes
