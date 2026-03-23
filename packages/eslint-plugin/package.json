@@ -1,0 +1,36 @@
+{
+  "name": "@axioned/eslint-plugin",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "ESLint plugin with Axioned's shared rules",
+  "exports": {
+    ".": "./index.js",
+    "./configs/*": "./configs/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axioned/config.git",
+    "directory": "packages/eslint-plugin"
+  },
+  "homepage": "https://github.com/axioned/config/tree/main/packages/eslint-plugin#README",
+  "bugs": {
+    "url": "https://github.com/axioned/config/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslint-config"
+  ],
+  "author": "Axioned (https://axioned.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.0.0 || ^9.0.0"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
