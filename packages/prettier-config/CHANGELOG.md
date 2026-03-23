@@ -1,5 +1,11 @@
 # @axioned/prettier-config
 
+## 1.1.1
+
+### Patch Changes
+
+- Change printWidth from 120 to 80
+
 ## 1.1.0
 
 ### Minor Changes

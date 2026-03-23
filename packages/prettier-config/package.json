@@ -1,6 +1,6 @@
 {
   "name": "@axioned/prettier-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "Axioned's shared Prettier config",
   "exports": {
