@@ -1,5 +1,11 @@
 # @axioned/eslint-plugin
 
+## 0.1.1
+
+### Patch Changes
+
+- Add TypeScript type declarations, align package descriptions, and add READMEs
+
 ## 0.1.0
 
 ### Minor Changes

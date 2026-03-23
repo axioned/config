@@ -1,5 +1,11 @@
 # @axioned/prettier-config
 
+## 1.1.2
+
+### Patch Changes
+
+- Add TypeScript type declarations, align package descriptions, and add READMEs
+
 ## 1.1.1
 
 ### Patch Changes
