@@ -2,39 +2,47 @@
 
 Axioned's shared Prettier config
 
-## Usage
-
-Install the package using `npm`
+## Installation
 
 ```sh
-npm install --save-dev @axioned/prettier-config
+bun add -d @axioned/prettier-config prettier
 ```
 
-Add the `prettier` key to your `package.json`
+## Usage
 
-```diff
-   "author": "Axioned (https://axioned.com)",
-+  "prettier": "@axioned/prettier-config",
-   "main": "index.js"
-```
+### Recommended — `package.json` field
 
-**OR**
-
-Create a .prettierrc , .prettierrc.yaml , .prettierrc.yml or .prettierrc.json file and export a string.
+Add a `prettier` key to your `package.json`:
 
 ```json
-"@axioned/prettier-config"
+{
+  "prettier": "@axioned/prettier-config"
+}
 ```
 
-**OR**
+### Extending the config
 
-Create a prettier.config.js or .prettierrc.js file and export an object.
+To override specific options, create a `prettier.config.mjs` at your project root:
 
 ```js
-module.exports = {
-  ...require("@axioned/prettier-config"),
-  // endOfLine: 'lf', // to overwrite the property
+import axionedPrettier from "@axioned/prettier-config";
+
+/** @type {import("prettier").Config} */
+const config = {
+  ...axionedPrettier,
+  // your overrides here
 };
+
+export default config;
 ```
 
-[Check out the `prettier` documentation for more info on sharing configurations](https://prettier.io/docs/en/configuration.html#sharing-configurations).
+### Format scripts
+
+```json
+{
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  }
+}
+```
