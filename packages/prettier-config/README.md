@@ -1,6 +1,6 @@
 # prettier-config
 
-Prettier config used at Axioned
+Axioned's shared Prettier config
 
 ## Usage
 

@@ -2,7 +2,7 @@
   "name": "@axioned/eslint-plugin",
   "version": "0.1.0",
   "type": "module",
-  "description": "ESLint plugin with Axioned's shared rules",
+  "description": "Axioned's shared ESLint plugin",
   "exports": {
     ".": "./index.js",
     "./configs/*": "./configs/*.js"
