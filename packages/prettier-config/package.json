@@ -1,22 +1,33 @@
 {
   "name": "@axioned/prettier-config",
   "version": "1.0.7",
+  "type": "module",
   "description": "Prettier config used at Axioned",
+  "exports": {
+    ".": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/axioned/config.git",
     "directory": "packages/prettier-config"
   },
   "homepage": "https://github.com/axioned/config/tree/main/packages/prettier-config#README",
-  "main": "index.js",
   "keywords": [
     "prettier",
     "prettier-config"
   ],
   "author": "Axioned (https://axioned.com)",
   "license": "MIT",
-  "devDependencies": {
-    "prettier": "^3.5.3"
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore"
   },
   "publishConfig": {
     "access": "public"
