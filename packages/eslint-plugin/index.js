@@ -9,8 +9,6 @@ const plugin = {
   configs: {},
 };
 
-// Configs are assigned after plugin is defined so they can reference it.
-// Consumers can use: plugin.configs.recommended  OR  import from "@axioned/eslint-plugin/configs/recommended"
 Object.assign(plugin.configs, {
   recommended: {
     name: "@axioned/recommended",
